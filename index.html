@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <style>
+        #head,#slide{
+           text-align: center;
+           border:1px solid black;
+        }
+        #head{
+            background-color: rgb(160, 222, 115);
+        }
+        #slide{
+            padding:50px;
+            display:none;
+            background-color: rgb(104, 199, 186);
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="head">
+        Click me to slide down panel
+    </div>
+    <div id="slide">
+        Hello world;
+    </div>
+    <script>
+        $(function(){
+            $("#head").click(function(){
+                $("#slide").slideDown();
+            })
+        });
+    </script>
+</body>
+</html>
